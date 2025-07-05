@@ -1,6 +1,123 @@
 # Git Hello
 Hello Git
 
+# 1. Begin
+
+- Init new repo
+
+```bash
+git init
+```
+
+- Clone repo to PC
+
+```bash
+git clone <url>
+```
+
+- Connect your repo to GitHub
+
+```bash
+git remote add origin <url>
+```
+
+# 2. Stage changes 
+
+- all files
+  
+```bash
+git add .
+```
+
+- specific file
+
+```bash
+git add <file>
+```
+
+- Show changes not yet staged
+
+```bash
+git diff
+```
+
+# 3. Show changes 
+
+```bash
+git status
+```
+
+# 4. Branches
+
+- List all branches
+
+```bash
+git branch
+```
+
+- Create a new
+
+```bash
+git branch <name>
+```
+
+- switch to existing branch
+  
+```bash
+git checkout <name>
+```
+
+- create & switch to new branch
+
+```bash
+git checkout -b <name>
+```
+
+- Merge another branch into current one
+
+```bash
+git merge <branch>
+```
+
+- Delete a branch (after merging)
+
+```bash
+git branch -d <name>
+```
+
+
+# 5. Commit
+
+- commit changes with msg 
+
+```bash
+git commit -m "Message"	
+```
+
+# 6. Push / Pull
+
+- Push your main branch to GitHub for the first time
+
+```bash
+git push -u origin main
+```
+
+- Get the latest changes from GitHub
+
+```bash
+git pull
+```
+
+- Get changes from remote without merging
+
+```bash
+git fetch
+```
+
+
+---
+
+
 # Setup & Configuration
 
 git config --global user.name "Your Name"	          Set your name for Git commits
@@ -10,6 +127,7 @@ git config --global user.email "you@example.com"	  Set your email for Git commit
 git init	                                          Initialize a new Git repository
 
 git clone <url>	                                    Clone a GitHub (or other) repository to your computer
+
 
 # Working with Files
 
@@ -38,6 +156,7 @@ git checkout -b <name>	Create and switch to a new branch
 git merge <branch>	    Merge another branch into the current one
 
 git branch -d <name>	  Delete a branch (after merging)
+
 
 # Remote & GitHub
 
