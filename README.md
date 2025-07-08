@@ -3,90 +3,97 @@ Hello Git
 
 # 1. Begin
 
-- Init new repo
+- Initializes a Git repository in your current directory.
+- Creates a hidden folder called ".git" that contains all the necessary files and history for version control.
 
 ```bash
 git init
 ```
 
-- Clone repo to PC
+- Now : the folder becomes a Git working directory, meaning you can now:
+  - Track file changes
+  - Use branches
+  - Connect to remote repositories (e.g., GitHub)
+  - Use other Git features
+
+# 2. Connect your repo to GitHub
 
 ```bash
-git clone <url>
+git remote add origin https://github.com/user/repo.git
 ```
 
-- Connect your repo to GitHub
+# 3. Clone remote repo to PC (GitHub).
 
 ```bash
-git remote add origin <url>
+git clone https://github.com/user/repo.git
 ```
 
-# 2. Stage changes 
+# 4. Stage changes 
 
-- all files
+### all files
   
 ```bash
 git add .
 ```
 
-- specific file
+### specific file
 
 ```bash
 git add <file>
 ```
 
-- Show changes not yet staged
+### Show changes not yet staged
 
 ```bash
 git diff
 ```
 
-# 3. Show changes 
+# 5. Show changes 
 
 ```bash
 git status
 ```
 
-# 4. Branches
+# 6. Branches
 
-- List all branches
+### List all branches
 
 ```bash
 git branch
 ```
 
-- Create a new
+### Create a new branche
 
 ```bash
 git branch <name>
 ```
 
-- switch to existing branch
+### switch to existing branch
   
 ```bash
 git checkout <name>
 ```
 
-- create & switch to new branch
+### create & switch to new branch
 
 ```bash
 git checkout -b <name>
 ```
 
-- Merge another branch into current one
+### Merge another branch into current one
 
 ```bash
 git merge <branch>
 ```
 
-- Delete a branch (after merging)
+### Delete a branch (after merging)
 
 ```bash
 git branch -d <name>
 ```
 
 
-# 5. Commit
+# 7. Commit
 
 - commit changes with msg 
 
@@ -94,21 +101,19 @@ git branch -d <name>
 git commit -m "Message"	
 ```
 
-# 6. Push / Pull
+# 8. Push / Pull
 
-- Push your main branch to GitHub for the first time
+### Push your main branch to GitHub for the first time
 
 ```bash
 git push -u origin main
 ```
-
-- Get the latest changes from GitHub
+### Get the latest changes from GitHub
 
 ```bash
 git pull
 ```
-
-- Get changes from remote without merging
+### Get changes from remote without merging
 
 ```bash
 git fetch
