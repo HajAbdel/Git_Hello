@@ -3,7 +3,7 @@ Hello Git
 
 # 1. Begin
 
-- Initializes a Git repository in your current directory.
+- Initializes a Git repository in current directory
 - Creates a hidden folder called ".git" that contains all the necessary files and history for version control.
 
 ```bash
@@ -30,13 +30,17 @@ git clone https://github.com/user/repo.git
 
 # 4. Stage changes 
 
-### all files
-  
+### stage all files
+
 ```bash
 git add .
 ```
 
-### specific file
+- Add all changes in current directory & subdirectories to staging area
+- that measn : “I want to include these changes in the next commit. (New, Modified & Deleted files & folders in the current directory & below
+- 🛑 it's good to use a .gitignore file to exclude unwanted files.
+
+### stage specific file
 
 ```bash
 git add <file>
@@ -48,11 +52,39 @@ git add <file>
 git diff
 ```
 
-# 5. Show changes 
+### Show changes ??
 
 ```bash
 git status
 ```
+- Show me what’s going on in my working directory and staging area
+- it shows:
+  ✅ Which branch you’re on
+  ❓ Which files have been modified
+  ➕ Which files are staged (ready to commit)
+  ❌ Which files are not staged yet
+  🆕 Which files are untracked (new files not added to Git yet)
+
+
+# 7. Commit
+
+### commit changes with msg 
+
+```bash
+git commit -m "Message"	
+```
+
+- Create new snapshot (with unique ID) of staged changes as a commit + message describes snapshot
+- ⚠️ Every time you change a file and want to commit that change, **you must "git add" it again**.
+
+> OR :
+
+```bash
+git commit -am "Commit 2 on main"
+```
+
+- It automatically stages all changes to files that are **already tracked by Git** (were committed before) & have been modified or deleted
+
 
 # 6. Branches
 
@@ -92,14 +124,9 @@ git merge <branch>
 git branch -d <name>
 ```
 
+xxxxxx
 
-# 7. Commit
 
-- commit changes with msg 
-
-```bash
-git commit -m "Message"	
-```
 
 # 8. Push / Pull
 
