@@ -52,7 +52,7 @@ git add <file>
 git diff
 ```
 
-### Show changes ??
+### Show changes
 
 ```bash
 git status
@@ -124,11 +124,7 @@ git merge <branch>
 git branch -d <name>
 ```
 
-xxxxxx
-
-
-
-# 8. Push / Pull
+# 7. Push / Pull
 
 ### Push your main branch to GitHub for the first time
 
@@ -140,12 +136,6 @@ git push -u origin main
 ```bash
 git pull
 ```
-### Get changes from remote without merging
-
-```bash
-git fetch
-```
-
 
 ---
 
